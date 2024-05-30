@@ -8,7 +8,7 @@ const port = 3000
 app.use(express.json())
 
 //routes
-app.use('/testing/all-data', removeAllDataRouter)
+app.use('/testing', removeAllDataRouter)
 app.use('/videos', videosRouter)
 
 

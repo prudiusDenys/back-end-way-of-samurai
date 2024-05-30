@@ -3,7 +3,7 @@ import {videos} from './videos-router';
 
 export const removeAllDataRouter = Router({})
 
-removeAllDataRouter.delete('/', (req: Request, res: Response) => {
+removeAllDataRouter.delete('/all-data', (req: Request, res: Response) => {
   videos = [];
 
   res.send(204)
